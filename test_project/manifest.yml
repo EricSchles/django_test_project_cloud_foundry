@@ -1,0 +1,10 @@
+---
+# all applications use these settings and services
+memory: 512M
+instances: 1
+env:
+  DISABLE_COLLECTSTATIC: 1
+applications:
+- name: test_project
+  path: .
+  timeout: 180
